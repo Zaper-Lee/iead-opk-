@@ -1,0 +1,868 @@
+十月 02, 2019 2:29:27 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.81
+十月 02, 2019 2:29:27 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Aug 11 2017 10:21:27 UTC
+十月 02, 2019 2:29:27 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.81.0
+十月 02, 2019 2:29:27 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Windows 7
+十月 02, 2019 2:29:27 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            6.1
+十月 02, 2019 2:29:27 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          amd64
+十月 02, 2019 2:29:27 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             D:\JAVA\JRE
+十月 02, 2019 2:29:27 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.8.0_181-b13
+十月 02, 2019 2:29:27 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+十月 02, 2019 2:29:27 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         D:\apache-tomcat
+十月 02, 2019 2:29:27 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         D:\apache-tomcat
+十月 02, 2019 2:29:27 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=D:\apache-tomcat\conf\logging.properties
+十月 02, 2019 2:29:27 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+十月 02, 2019 2:29:27 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+十月 02, 2019 2:29:27 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=D:\apache-tomcat\endorsed
+十月 02, 2019 2:29:27 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=D:\apache-tomcat
+十月 02, 2019 2:29:27 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=D:\apache-tomcat
+十月 02, 2019 2:29:27 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=D:\apache-tomcat\temp
+十月 02, 2019 2:29:27 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: Loaded APR based Apache Tomcat Native library 1.2.12 using APR version 1.5.2.
+十月 02, 2019 2:29:27 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+十月 02, 2019 2:29:28 上午 org.apache.catalina.core.AprLifecycleListener initializeSSL
+信息: OpenSSL successfully initialized (OpenSSL 1.0.2k  26 Jan 2017)
+十月 02, 2019 2:29:28 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-apr-8080"]
+十月 02, 2019 2:29:28 上午 org.apache.coyote.AbstractProtocol init
+严重: Failed to initialize end point associated with ProtocolHandler ["http-apr-8080"]
+java.lang.Exception: Socket bind failed: [730013] ???????????????í????×??????·??????×?
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:481)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:728)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:452)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:978)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:560)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:840)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:643)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:668)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:253)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:427)
+
+十月 02, 2019 2:29:28 上午 org.apache.catalina.core.StandardService initInternal
+严重: Failed to initialize connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:560)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:840)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:643)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:668)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:253)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:427)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.lang.Exception: Socket bind failed: [730013] ???????????????í????×??????·??????×?
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:481)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:728)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:452)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:978)
+	... 13 more
+
+十月 02, 2019 2:29:28 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-apr-8009"]
+十月 02, 2019 2:29:28 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 2072 ms
+十月 02, 2019 2:29:28 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+十月 02, 2019 2:29:28 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.81
+十月 02, 2019 2:29:28 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive D:\apache-tomcat\webapps\usermanager.war
+十月 02, 2019 2:29:29 上午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+十月 02, 2019 2:29:30 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive D:\apache-tomcat\webapps\usermanager.war has finished in 1,047 ms
+十月 02, 2019 2:29:30 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\docs
+十月 02, 2019 2:29:30 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\docs has finished in 75 ms
+十月 02, 2019 2:29:30 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\examples
+十月 02, 2019 2:29:30 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\examples has finished in 400 ms
+十月 02, 2019 2:29:30 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\host-manager
+十月 02, 2019 2:29:30 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\host-manager has finished in 84 ms
+十月 02, 2019 2:29:30 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\manager
+十月 02, 2019 2:29:30 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\manager has finished in 75 ms
+十月 02, 2019 2:29:30 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\ROOT
+十月 02, 2019 2:29:30 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\ROOT has finished in 64 ms
+十月 02, 2019 2:29:30 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-apr-8009"]
+十月 02, 2019 2:29:30 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 1973 ms
+十月 02, 2019 2:30:26 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.81
+十月 02, 2019 2:30:26 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Aug 11 2017 10:21:27 UTC
+十月 02, 2019 2:30:26 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.81.0
+十月 02, 2019 2:30:26 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Windows 7
+十月 02, 2019 2:30:26 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            6.1
+十月 02, 2019 2:30:26 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          amd64
+十月 02, 2019 2:30:26 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             D:\JAVA\JRE
+十月 02, 2019 2:30:26 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.8.0_181-b13
+十月 02, 2019 2:30:26 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+十月 02, 2019 2:30:26 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         D:\apache-tomcat
+十月 02, 2019 2:30:26 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         D:\apache-tomcat
+十月 02, 2019 2:30:26 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=D:\apache-tomcat\conf\logging.properties
+十月 02, 2019 2:30:26 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+十月 02, 2019 2:30:26 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+十月 02, 2019 2:30:26 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=D:\apache-tomcat\endorsed
+十月 02, 2019 2:30:26 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=D:\apache-tomcat
+十月 02, 2019 2:30:26 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=D:\apache-tomcat
+十月 02, 2019 2:30:26 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=D:\apache-tomcat\temp
+十月 02, 2019 2:30:26 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: Loaded APR based Apache Tomcat Native library 1.2.12 using APR version 1.5.2.
+十月 02, 2019 2:30:26 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+十月 02, 2019 2:30:27 上午 org.apache.catalina.core.AprLifecycleListener initializeSSL
+信息: OpenSSL successfully initialized (OpenSSL 1.0.2k  26 Jan 2017)
+十月 02, 2019 2:30:28 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-apr-8080"]
+十月 02, 2019 2:30:28 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-apr-8009"]
+十月 02, 2019 2:30:28 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1762 ms
+十月 02, 2019 2:30:28 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+十月 02, 2019 2:30:28 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.81
+十月 02, 2019 2:30:28 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive D:\apache-tomcat\webapps\usermanager.war
+十月 02, 2019 2:30:28 上午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+十月 02, 2019 2:30:28 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive D:\apache-tomcat\webapps\usermanager.war has finished in 851 ms
+十月 02, 2019 2:30:28 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\docs
+十月 02, 2019 2:30:29 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\docs has finished in 56 ms
+十月 02, 2019 2:30:29 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\examples
+十月 02, 2019 2:30:29 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\examples has finished in 308 ms
+十月 02, 2019 2:30:29 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\host-manager
+十月 02, 2019 2:30:29 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\host-manager has finished in 79 ms
+十月 02, 2019 2:30:29 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\manager
+十月 02, 2019 2:30:29 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\manager has finished in 77 ms
+十月 02, 2019 2:30:29 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\ROOT
+十月 02, 2019 2:30:29 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\ROOT has finished in 57 ms
+十月 02, 2019 2:30:29 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-apr-8080"]
+十月 02, 2019 2:30:29 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-apr-8009"]
+十月 02, 2019 2:30:29 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 1562 ms
+十月 02, 2019 2:32:44 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.81
+十月 02, 2019 2:32:44 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Aug 11 2017 10:21:27 UTC
+十月 02, 2019 2:32:44 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.81.0
+十月 02, 2019 2:32:44 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Windows 7
+十月 02, 2019 2:32:44 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            6.1
+十月 02, 2019 2:32:44 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          amd64
+十月 02, 2019 2:32:44 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             D:\JAVA\JRE
+十月 02, 2019 2:32:44 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.8.0_181-b13
+十月 02, 2019 2:32:44 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+十月 02, 2019 2:32:44 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         D:\apache-tomcat
+十月 02, 2019 2:32:44 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         D:\apache-tomcat
+十月 02, 2019 2:32:44 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=D:\apache-tomcat\conf\logging.properties
+十月 02, 2019 2:32:44 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+十月 02, 2019 2:32:44 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+十月 02, 2019 2:32:44 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=D:\apache-tomcat\endorsed
+十月 02, 2019 2:32:44 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=D:\apache-tomcat
+十月 02, 2019 2:32:44 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=D:\apache-tomcat
+十月 02, 2019 2:32:44 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=D:\apache-tomcat\temp
+十月 02, 2019 2:32:44 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: Loaded APR based Apache Tomcat Native library 1.2.12 using APR version 1.5.2.
+十月 02, 2019 2:32:44 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+十月 02, 2019 2:32:45 上午 org.apache.catalina.core.AprLifecycleListener initializeSSL
+信息: OpenSSL successfully initialized (OpenSSL 1.0.2k  26 Jan 2017)
+十月 02, 2019 2:32:45 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-apr-8080"]
+十月 02, 2019 2:32:45 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-apr-8009"]
+十月 02, 2019 2:32:45 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1760 ms
+十月 02, 2019 2:32:45 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+十月 02, 2019 2:32:45 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.81
+十月 02, 2019 2:32:45 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive D:\apache-tomcat\webapps\usermanager.war
+十月 02, 2019 2:32:46 上午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+十月 02, 2019 2:32:46 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive D:\apache-tomcat\webapps\usermanager.war has finished in 886 ms
+十月 02, 2019 2:32:46 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\docs
+十月 02, 2019 2:32:46 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\docs has finished in 82 ms
+十月 02, 2019 2:32:46 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\examples
+十月 02, 2019 2:32:47 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\examples has finished in 347 ms
+十月 02, 2019 2:32:47 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\host-manager
+十月 02, 2019 2:32:47 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\host-manager has finished in 81 ms
+十月 02, 2019 2:32:47 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\manager
+十月 02, 2019 2:32:47 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\manager has finished in 67 ms
+十月 02, 2019 2:32:47 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\ROOT
+十月 02, 2019 2:32:47 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\ROOT has finished in 56 ms
+十月 02, 2019 2:32:47 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-apr-8080"]
+十月 02, 2019 2:32:47 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-apr-8009"]
+十月 02, 2019 2:32:47 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 1677 ms
+十月 02, 2019 2:36:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.81
+十月 02, 2019 2:36:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Aug 11 2017 10:21:27 UTC
+十月 02, 2019 2:36:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.81.0
+十月 02, 2019 2:36:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Windows 7
+十月 02, 2019 2:36:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            6.1
+十月 02, 2019 2:36:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          amd64
+十月 02, 2019 2:36:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             D:\JAVA\JRE
+十月 02, 2019 2:36:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.8.0_181-b13
+十月 02, 2019 2:36:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+十月 02, 2019 2:36:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         D:\apache-tomcat
+十月 02, 2019 2:36:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         D:\apache-tomcat
+十月 02, 2019 2:36:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=D:\apache-tomcat\conf\logging.properties
+十月 02, 2019 2:36:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+十月 02, 2019 2:36:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+十月 02, 2019 2:36:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=D:\apache-tomcat\endorsed
+十月 02, 2019 2:36:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=D:\apache-tomcat
+十月 02, 2019 2:36:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=D:\apache-tomcat
+十月 02, 2019 2:36:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=D:\apache-tomcat\temp
+十月 02, 2019 2:36:14 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: Loaded APR based Apache Tomcat Native library 1.2.12 using APR version 1.5.2.
+十月 02, 2019 2:36:14 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+十月 02, 2019 2:36:15 上午 org.apache.catalina.core.AprLifecycleListener initializeSSL
+信息: OpenSSL successfully initialized (OpenSSL 1.0.2k  26 Jan 2017)
+十月 02, 2019 2:36:15 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-apr-8080"]
+十月 02, 2019 2:36:15 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-apr-8009"]
+十月 02, 2019 2:36:15 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1842 ms
+十月 02, 2019 2:36:15 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+十月 02, 2019 2:36:15 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.81
+十月 02, 2019 2:36:15 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\docs
+十月 02, 2019 2:36:16 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\docs has finished in 557 ms
+十月 02, 2019 2:36:16 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\examples
+十月 02, 2019 2:36:16 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\examples has finished in 478 ms
+十月 02, 2019 2:36:16 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\host-manager
+十月 02, 2019 2:36:17 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\host-manager has finished in 100 ms
+十月 02, 2019 2:36:17 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\manager
+十月 02, 2019 2:36:17 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\manager has finished in 90 ms
+十月 02, 2019 2:36:17 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\ROOT
+十月 02, 2019 2:36:17 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\ROOT has finished in 86 ms
+十月 02, 2019 2:36:17 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-apr-8080"]
+十月 02, 2019 2:36:17 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-apr-8009"]
+十月 02, 2019 2:36:17 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 1439 ms
+十月 02, 2019 2:41:01 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.81
+十月 02, 2019 2:41:01 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Aug 11 2017 10:21:27 UTC
+十月 02, 2019 2:41:01 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.81.0
+十月 02, 2019 2:41:01 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Windows 7
+十月 02, 2019 2:41:01 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            6.1
+十月 02, 2019 2:41:01 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          amd64
+十月 02, 2019 2:41:01 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             D:\JAVA\JRE
+十月 02, 2019 2:41:01 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.8.0_181-b13
+十月 02, 2019 2:41:01 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+十月 02, 2019 2:41:01 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         D:\apache-tomcat
+十月 02, 2019 2:41:01 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         D:\apache-tomcat
+十月 02, 2019 2:41:01 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=D:\apache-tomcat\conf\logging.properties
+十月 02, 2019 2:41:01 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+十月 02, 2019 2:41:01 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+十月 02, 2019 2:41:01 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=D:\apache-tomcat\endorsed
+十月 02, 2019 2:41:01 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=D:\apache-tomcat
+十月 02, 2019 2:41:01 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=D:\apache-tomcat
+十月 02, 2019 2:41:01 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=D:\apache-tomcat\temp
+十月 02, 2019 2:41:01 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: Loaded APR based Apache Tomcat Native library 1.2.12 using APR version 1.5.2.
+十月 02, 2019 2:41:01 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+十月 02, 2019 2:41:02 上午 org.apache.catalina.core.AprLifecycleListener initializeSSL
+信息: OpenSSL successfully initialized (OpenSSL 1.0.2k  26 Jan 2017)
+十月 02, 2019 2:41:02 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-apr-8080"]
+十月 02, 2019 2:41:02 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-apr-8009"]
+十月 02, 2019 2:41:02 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1686 ms
+十月 02, 2019 2:41:02 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+十月 02, 2019 2:41:02 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.81
+十月 02, 2019 2:41:02 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\docs
+十月 02, 2019 2:41:02 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\docs has finished in 509 ms
+十月 02, 2019 2:41:02 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\examples
+十月 02, 2019 2:41:03 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\examples has finished in 417 ms
+十月 02, 2019 2:41:03 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\host-manager
+十月 02, 2019 2:41:03 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\host-manager has finished in 90 ms
+十月 02, 2019 2:41:03 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\manager
+十月 02, 2019 2:41:03 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\manager has finished in 88 ms
+十月 02, 2019 2:41:03 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\ROOT
+十月 02, 2019 2:41:03 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\ROOT has finished in 55 ms
+十月 02, 2019 2:41:03 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-apr-8080"]
+十月 02, 2019 2:41:03 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-apr-8009"]
+十月 02, 2019 2:41:03 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 1277 ms
+十月 02, 2019 2:43:22 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive D:\apache-tomcat\webapps\usermanager.war
+十月 02, 2019 2:43:23 上午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+十月 02, 2019 2:43:23 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive D:\apache-tomcat\webapps\usermanager.war has finished in 359 ms
+十月 02, 2019 2:44:28 上午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+严重: The web application [/usermanager] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+十月 02, 2019 2:44:28 上午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+严重: The web application [/usermanager] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak.
+十月 02, 2019 2:44:28 上午 org.apache.catalina.loader.WebappClassLoaderBase findResourceInternal
+信息: Illegal access: this web application instance has been stopped already.  Could not load .  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+十月 02, 2019 2:44:28 上午 org.apache.catalina.loader.WebappClassLoaderBase findResourceInternal
+信息: Illegal access: this web application instance has been stopped already.  Could not load .  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+十月 02, 2019 2:44:28 上午 org.apache.catalina.loader.WebappClassLoaderBase findResourceInternal
+信息: Illegal access: this web application instance has been stopped already.  Could not load .  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+十月 02, 2019 2:44:28 上午 org.apache.catalina.loader.WebappClassLoaderBase findResourceInternal
+信息: Illegal access: this web application instance has been stopped already.  Could not load .  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+十月 02, 2019 2:44:28 上午 org.apache.catalina.loader.WebappClassLoaderBase findResourceInternal
+信息: Illegal access: this web application instance has been stopped already.  Could not load .  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+十月 02, 2019 2:44:28 上午 org.apache.catalina.loader.WebappClassLoaderBase findResourceInternal
+信息: Illegal access: this web application instance has been stopped already.  Could not load .  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+十月 02, 2019 2:44:29 上午 org.apache.catalina.startup.HostConfig undeploy
+信息: Undeploying context [/usermanager]
+十月 02, 2019 2:44:55 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive D:\apache-tomcat\webapps\usermanager.war
+十月 02, 2019 2:44:55 上午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+十月 02, 2019 2:44:55 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive D:\apache-tomcat\webapps\usermanager.war has finished in 364 ms
+十月 02, 2019 2:45:28 上午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+严重: The web application [/usermanager] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+十月 02, 2019 2:45:28 上午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+严重: The web application [/usermanager] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak.
+十月 02, 2019 2:45:29 上午 org.apache.catalina.startup.HostConfig undeploy
+信息: Undeploying context [/usermanager]
+十月 02, 2019 2:45:31 上午 org.apache.catalina.loader.WebappClassLoaderBase findResourceInternal
+信息: Illegal access: this web application instance has been stopped already.  Could not load .  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+十月 02, 2019 2:45:43 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive D:\apache-tomcat\webapps\usermanager.war
+十月 02, 2019 2:45:43 上午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+十月 02, 2019 2:45:43 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive D:\apache-tomcat\webapps\usermanager.war has finished in 321 ms
+十月 02, 2019 2:45:45 上午 org.apache.catalina.startup.HostConfig undeploy
+信息: Undeploying context [/usermanager]
+十月 02, 2019 2:46:03 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive D:\apache-tomcat\webapps\usermanager.war
+十月 02, 2019 2:46:04 上午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+十月 02, 2019 2:46:04 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive D:\apache-tomcat\webapps\usermanager.war has finished in 284 ms
+十月 02, 2019 2:46:07 上午 org.apache.catalina.startup.HostConfig undeploy
+信息: Undeploying context [/usermanager]
+十月 02, 2019 2:46:14 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive D:\apache-tomcat\webapps\usermanager.war
+十月 02, 2019 2:46:14 上午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+十月 02, 2019 2:46:14 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive D:\apache-tomcat\webapps\usermanager.war has finished in 306 ms
+十月 02, 2019 2:46:34 上午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+严重: The web application [/usermanager] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+十月 02, 2019 2:46:34 上午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+严重: The web application [/usermanager] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak.
+十月 02, 2019 2:46:35 上午 org.apache.catalina.startup.HostConfig undeploy
+信息: Undeploying context [/usermanager]
+十月 02, 2019 2:46:38 上午 org.apache.catalina.loader.WebappClassLoaderBase findResourceInternal
+信息: Illegal access: this web application instance has been stopped already.  Could not load .  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+十月 02, 2019 2:47:25 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.81
+十月 02, 2019 2:47:25 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Aug 11 2017 10:21:27 UTC
+十月 02, 2019 2:47:25 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.81.0
+十月 02, 2019 2:47:25 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Windows 7
+十月 02, 2019 2:47:25 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            6.1
+十月 02, 2019 2:47:25 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          amd64
+十月 02, 2019 2:47:25 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             D:\JAVA\JRE
+十月 02, 2019 2:47:25 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.8.0_181-b13
+十月 02, 2019 2:47:25 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+十月 02, 2019 2:47:25 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         D:\apache-tomcat
+十月 02, 2019 2:47:25 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         D:\apache-tomcat
+十月 02, 2019 2:47:25 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=D:\apache-tomcat\conf\logging.properties
+十月 02, 2019 2:47:25 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+十月 02, 2019 2:47:25 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+十月 02, 2019 2:47:25 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=D:\apache-tomcat\endorsed
+十月 02, 2019 2:47:25 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=D:\apache-tomcat
+十月 02, 2019 2:47:25 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=D:\apache-tomcat
+十月 02, 2019 2:47:25 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=D:\apache-tomcat\temp
+十月 02, 2019 2:47:25 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: Loaded APR based Apache Tomcat Native library 1.2.12 using APR version 1.5.2.
+十月 02, 2019 2:47:25 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+十月 02, 2019 2:47:26 上午 org.apache.catalina.core.AprLifecycleListener initializeSSL
+信息: OpenSSL successfully initialized (OpenSSL 1.0.2k  26 Jan 2017)
+十月 02, 2019 2:47:26 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-apr-8080"]
+十月 02, 2019 2:47:26 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-apr-8009"]
+十月 02, 2019 2:47:26 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1801 ms
+十月 02, 2019 2:47:26 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+十月 02, 2019 2:47:26 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.81
+十月 02, 2019 2:47:26 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive D:\apache-tomcat\webapps\usermanager.war
+十月 02, 2019 2:47:27 上午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+十月 02, 2019 2:47:27 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive D:\apache-tomcat\webapps\usermanager.war has finished in 1,068 ms
+十月 02, 2019 2:47:27 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\docs
+十月 02, 2019 2:47:28 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\docs has finished in 75 ms
+十月 02, 2019 2:47:28 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\examples
+十月 02, 2019 2:47:28 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\examples has finished in 378 ms
+十月 02, 2019 2:47:28 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\host-manager
+十月 02, 2019 2:47:28 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\host-manager has finished in 90 ms
+十月 02, 2019 2:47:28 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\manager
+十月 02, 2019 2:47:28 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\manager has finished in 75 ms
+十月 02, 2019 2:47:28 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\ROOT
+十月 02, 2019 2:47:28 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\ROOT has finished in 65 ms
+十月 02, 2019 2:47:28 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-apr-8080"]
+十月 02, 2019 2:47:28 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-apr-8009"]
+十月 02, 2019 2:47:28 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 1900 ms
+十月 02, 2019 2:53:39 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.81
+十月 02, 2019 2:53:39 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Aug 11 2017 10:21:27 UTC
+十月 02, 2019 2:53:39 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.81.0
+十月 02, 2019 2:53:39 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Windows 7
+十月 02, 2019 2:53:39 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            6.1
+十月 02, 2019 2:53:39 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          amd64
+十月 02, 2019 2:53:39 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             D:\JAVA\JRE
+十月 02, 2019 2:53:39 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.8.0_181-b13
+十月 02, 2019 2:53:39 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+十月 02, 2019 2:53:39 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         D:\apache-tomcat
+十月 02, 2019 2:53:39 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         D:\apache-tomcat
+十月 02, 2019 2:53:39 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=D:\apache-tomcat\conf\logging.properties
+十月 02, 2019 2:53:39 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+十月 02, 2019 2:53:39 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+十月 02, 2019 2:53:39 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=D:\apache-tomcat\endorsed
+十月 02, 2019 2:53:39 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=D:\apache-tomcat
+十月 02, 2019 2:53:39 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=D:\apache-tomcat
+十月 02, 2019 2:53:39 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=D:\apache-tomcat\temp
+十月 02, 2019 2:53:39 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: Loaded APR based Apache Tomcat Native library 1.2.12 using APR version 1.5.2.
+十月 02, 2019 2:53:39 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+十月 02, 2019 2:53:40 上午 org.apache.catalina.core.AprLifecycleListener initializeSSL
+信息: OpenSSL successfully initialized (OpenSSL 1.0.2k  26 Jan 2017)
+十月 02, 2019 2:53:40 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-apr-8080"]
+十月 02, 2019 2:53:40 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-apr-8009"]
+十月 02, 2019 2:53:40 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1681 ms
+十月 02, 2019 2:53:40 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+十月 02, 2019 2:53:40 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.81
+十月 02, 2019 2:53:40 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\docs
+十月 02, 2019 2:53:40 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\docs has finished in 495 ms
+十月 02, 2019 2:53:40 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\examples
+十月 02, 2019 2:53:41 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\examples has finished in 407 ms
+十月 02, 2019 2:53:41 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\host-manager
+十月 02, 2019 2:53:41 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\host-manager has finished in 91 ms
+十月 02, 2019 2:53:41 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\manager
+十月 02, 2019 2:53:41 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\manager has finished in 78 ms
+十月 02, 2019 2:53:41 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\ROOT
+十月 02, 2019 2:53:41 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\ROOT has finished in 66 ms
+十月 02, 2019 2:53:41 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-apr-8080"]
+十月 02, 2019 2:53:41 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-apr-8009"]
+十月 02, 2019 2:53:41 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 1260 ms
+十月 02, 2019 2:54:16 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.81
+十月 02, 2019 2:54:16 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Aug 11 2017 10:21:27 UTC
+十月 02, 2019 2:54:16 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.81.0
+十月 02, 2019 2:54:16 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Windows 7
+十月 02, 2019 2:54:16 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            6.1
+十月 02, 2019 2:54:16 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          amd64
+十月 02, 2019 2:54:16 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             D:\JAVA\JRE
+十月 02, 2019 2:54:16 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.8.0_181-b13
+十月 02, 2019 2:54:16 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+十月 02, 2019 2:54:16 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         D:\apache-tomcat
+十月 02, 2019 2:54:16 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         D:\apache-tomcat
+十月 02, 2019 2:54:16 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=D:\apache-tomcat\conf\logging.properties
+十月 02, 2019 2:54:16 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+十月 02, 2019 2:54:16 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+十月 02, 2019 2:54:16 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=D:\apache-tomcat\endorsed
+十月 02, 2019 2:54:16 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=D:\apache-tomcat
+十月 02, 2019 2:54:16 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=D:\apache-tomcat
+十月 02, 2019 2:54:16 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=D:\apache-tomcat\temp
+十月 02, 2019 2:54:16 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: Loaded APR based Apache Tomcat Native library 1.2.12 using APR version 1.5.2.
+十月 02, 2019 2:54:16 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+十月 02, 2019 2:54:16 上午 org.apache.catalina.core.AprLifecycleListener initializeSSL
+信息: OpenSSL successfully initialized (OpenSSL 1.0.2k  26 Jan 2017)
+十月 02, 2019 2:54:17 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-apr-8080"]
+十月 02, 2019 2:54:17 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-apr-8009"]
+十月 02, 2019 2:54:17 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1712 ms
+十月 02, 2019 2:54:17 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+十月 02, 2019 2:54:17 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.81
+十月 02, 2019 2:54:17 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive D:\apache-tomcat\webapps\usermanager.war
+十月 02, 2019 2:54:18 上午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+十月 02, 2019 2:54:18 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive D:\apache-tomcat\webapps\usermanager.war has finished in 948 ms
+十月 02, 2019 2:54:18 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\docs
+十月 02, 2019 2:54:18 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\docs has finished in 55 ms
+十月 02, 2019 2:54:18 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\examples
+十月 02, 2019 2:54:18 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\examples has finished in 348 ms
+十月 02, 2019 2:54:18 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\host-manager
+十月 02, 2019 2:54:18 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\host-manager has finished in 81 ms
+十月 02, 2019 2:54:18 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\manager
+十月 02, 2019 2:54:18 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\manager has finished in 69 ms
+十月 02, 2019 2:54:18 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\ROOT
+十月 02, 2019 2:54:18 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\ROOT has finished in 56 ms
+十月 02, 2019 2:54:18 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-apr-8080"]
+十月 02, 2019 2:54:18 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-apr-8009"]
+十月 02, 2019 2:54:18 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 1721 ms
+十月 02, 2019 2:57:01 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.81
+十月 02, 2019 2:57:01 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Aug 11 2017 10:21:27 UTC
+十月 02, 2019 2:57:01 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.81.0
+十月 02, 2019 2:57:01 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Windows 7
+十月 02, 2019 2:57:01 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            6.1
+十月 02, 2019 2:57:01 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          amd64
+十月 02, 2019 2:57:01 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             D:\JAVA\JRE
+十月 02, 2019 2:57:01 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.8.0_181-b13
+十月 02, 2019 2:57:01 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+十月 02, 2019 2:57:01 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         D:\apache-tomcat
+十月 02, 2019 2:57:01 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         D:\apache-tomcat
+十月 02, 2019 2:57:01 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=D:\apache-tomcat\conf\logging.properties
+十月 02, 2019 2:57:01 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+十月 02, 2019 2:57:01 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+十月 02, 2019 2:57:01 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=D:\apache-tomcat\endorsed
+十月 02, 2019 2:57:01 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=D:\apache-tomcat
+十月 02, 2019 2:57:01 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=D:\apache-tomcat
+十月 02, 2019 2:57:01 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=D:\apache-tomcat\temp
+十月 02, 2019 2:57:02 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: Loaded APR based Apache Tomcat Native library 1.2.12 using APR version 1.5.2.
+十月 02, 2019 2:57:02 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+十月 02, 2019 2:57:02 上午 org.apache.catalina.core.AprLifecycleListener initializeSSL
+信息: OpenSSL successfully initialized (OpenSSL 1.0.2k  26 Jan 2017)
+十月 02, 2019 2:57:03 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-apr-8080"]
+十月 02, 2019 2:57:03 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-apr-8009"]
+十月 02, 2019 2:57:03 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1744 ms
+十月 02, 2019 2:57:03 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+十月 02, 2019 2:57:03 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.81
+十月 02, 2019 2:57:03 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive D:\apache-tomcat\webapps\usermanager.war
+十月 02, 2019 2:57:03 上午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+十月 02, 2019 2:57:04 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive D:\apache-tomcat\webapps\usermanager.war has finished in 919 ms
+十月 02, 2019 2:57:04 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\docs
+十月 02, 2019 2:57:04 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\docs has finished in 80 ms
+十月 02, 2019 2:57:04 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\examples
+十月 02, 2019 2:57:04 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\examples has finished in 345 ms
+十月 02, 2019 2:57:04 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\host-manager
+十月 02, 2019 2:57:04 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\host-manager has finished in 79 ms
+十月 02, 2019 2:57:04 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\manager
+十月 02, 2019 2:57:04 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\manager has finished in 90 ms
+十月 02, 2019 2:57:04 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\apache-tomcat\webapps\ROOT
+十月 02, 2019 2:57:04 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\apache-tomcat\webapps\ROOT has finished in 63 ms
+十月 02, 2019 2:57:04 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-apr-8080"]
+十月 02, 2019 2:57:04 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-apr-8009"]
+十月 02, 2019 2:57:04 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 1709 ms
+十月 02, 2019 2:57:08 上午 org.apache.catalina.core.StandardServer await
+信息: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+十月 02, 2019 2:57:08 上午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-apr-8080"]
+十月 02, 2019 2:57:08 上午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["ajp-apr-8009"]
+十月 02, 2019 2:57:08 上午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+十月 02, 2019 2:57:08 上午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-apr-8080"]
+十月 02, 2019 2:57:08 上午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["ajp-apr-8009"]
+十月 02, 2019 2:57:08 上午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-apr-8080"]
+十月 02, 2019 2:57:08 上午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["ajp-apr-8009"]
