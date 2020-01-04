@@ -15,12 +15,12 @@ public interface CityService {
 	 * @param provinceId
 	 * @return
 	 */
-	public List<City> findCitiesByPid(String provinceId);
+	List<City> findCitiesByPid(String provinceId);
 
 	/**
 	 * 根据城市id，查找出对应的市对象
 	 * @param cityId
 	 * @return
 	 */
-	public City findObject(String cityId);
+	City findObject(String cityId);
 }

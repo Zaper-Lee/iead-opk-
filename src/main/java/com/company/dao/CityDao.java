@@ -17,12 +17,12 @@ public interface CityDao {
 	 * @param provinceId
 	 * @return
 	 */
-	public List<City> findCitiesByPid(int provinceId);
+	List<City> findCitiesByPid(int provinceId);
 	
 	/**
 	 * 根据城市id，查询出对应的城市对象
 	 * @param cityId
 	 * @return
 	 */
-	public City findCitiesByCid(int cityId);
+	City findCitiesByCid(int cityId);
 }

@@ -15,12 +15,12 @@ public interface AreaService {
 	 * @param cityId
 	 * @return
 	 */
-	public List<Area> findAreasByCid(String cityId);
+	List<Area> findAreasByCid(String cityId);
 
 	/**
 	 * 根据区县id，查询对应的区县对象
 	 * @param areaId
 	 * @return
 	 */
-	public Area findObject(String areaId);
+	Area findObject(String areaId);
 }

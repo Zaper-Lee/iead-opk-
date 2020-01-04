@@ -17,7 +17,7 @@ public interface MeetingDao {
 	 * 
 	 * @return
 	 */
-	public List<Meeting> findMeetionAll();
+	List<Meeting> findMeetionAll();
 
 	/**
 	 * 通过会议主席查找会议
@@ -25,7 +25,7 @@ public interface MeetingDao {
 	 * @param uId
 	 * @return
 	 */
-	public List<Meeting> findMeetionByChairman(int chairman);
+	List<Meeting> findMeetionByChairman(int chairman);
 
 	/**
 	 * 通过会议记录人查找会议
@@ -33,7 +33,7 @@ public interface MeetingDao {
 	 * @param uId
 	 * @return
 	 */
-	public List<Meeting> findMeetionByRecorder(int recorder);
+	List<Meeting> findMeetionByRecorder(int recorder);
 
 	/**
 	 * 通过会议id查找会议
@@ -41,7 +41,7 @@ public interface MeetingDao {
 	 * @param mId
 	 * @return
 	 */
-	public Meeting findMeetionByMId(int mId);
+	Meeting findMeetionByMId(int mId);
 
 	/**
 	 * 通过会议主题模糊查询会议(ajax)
@@ -49,7 +49,7 @@ public interface MeetingDao {
 	 * @param theme
 	 * @return
 	 */
-	public List<Meeting> findMeetionByTheme(@Param(value = "theme") String theme);
+	List<Meeting> findMeetionByTheme(@Param(value = "theme") String theme);
 
 	/**
 	 * 根据会议时间段查找会议
@@ -58,7 +58,7 @@ public interface MeetingDao {
 	 * @param endDate
 	 * @return
 	 */
-	public List<Meeting> findMeetionByDate(@Param(value = "startDate") Date startDate,
+	List<Meeting> findMeetionByDate(@Param(value = "startDate") Date startDate,
                                            @Param(value = "endDate") Date endDate);
 
 	/**
@@ -67,7 +67,7 @@ public interface MeetingDao {
 	 * @param meeting
 	 * @return
 	 */
-	public int updateMeeting(Meeting meeting);
+	int updateMeeting(Meeting meeting);
 
 	/**
 	 * 添加会议
@@ -75,26 +75,26 @@ public interface MeetingDao {
 	 * @param meeting
 	 * @return
 	 */
-	public int addMeeting(Meeting meeting);
+	int addMeeting(Meeting meeting);
 	
 	/**
 	 * 更新会议审批状态
 	 * @param approveStateId 审批状态
 	 * @return 更新结果
 	 */
-	public int updateApprove(@Param("approveStateId") int approveStateId, @Param("mId") int mId);
+	int updateApprove(@Param("approveStateId") int approveStateId, @Param("mId") int mId);
 	
 	/**
 	 * 通过会议编号删除会议记录
 	 * @param mId 会议编号
 	 * @return 删除结果
 	 */
-	public int deleteMeetingByMid(int mId);
+	int deleteMeetingByMid(int mId);
 	
 	/**
 	 * 更新会议纪要
 	 * @param approveStateId 会议纪要
 	 * @return 更新结果
 	 */
-	public int updateContent(@Param("content") String content, @Param("mId") int mId);
+	int updateContent(@Param("content") String content, @Param("mId") int mId);
 }

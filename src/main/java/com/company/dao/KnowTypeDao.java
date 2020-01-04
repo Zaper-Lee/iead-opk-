@@ -15,12 +15,12 @@ public interface KnowTypeDao {
 	 * @param knowTypeId
 	 * @return
 	 */
-	public KnowType findKnowTypeByKTId(int knowTypeId);
+	KnowType findKnowTypeByKTId(int knowTypeId);
 	
 	/**
 	 * 查找所有的知识类型
 	 * 
 	 * @return
 	 */
-	public List<KnowType> findKnowTypeAll();
+	List<KnowType> findKnowTypeAll();
 }

@@ -14,7 +14,7 @@ public interface GradeDao {
 	 * 
 	 * @return
 	 */
-	public List<Grade> findGradeAll();
+	List<Grade> findGradeAll();
 	
 	/**
 	 * 根据考核等级id查找考核等级
@@ -22,5 +22,5 @@ public interface GradeDao {
 	 * @param gradeId
 	 * @return
 	 */
-	public Grade findGradeByGId(int gradeId);
+	Grade findGradeByGId(int gradeId);
 } 

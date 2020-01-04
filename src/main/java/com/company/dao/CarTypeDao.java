@@ -14,12 +14,12 @@ public interface CarTypeDao {
 	 * 
 	 * @return
 	 */
-	public CarType findCarsTypeByCTId(int carTypeId);
+	CarType findCarsTypeByCTId(int carTypeId);
 	
 	/**
 	 * 查询所有的车辆类型
 	 * 
 	 * @return
 	 */
-	public  List<CarType> findCarsTypeAll();
+	List<CarType> findCarsTypeAll();
 }

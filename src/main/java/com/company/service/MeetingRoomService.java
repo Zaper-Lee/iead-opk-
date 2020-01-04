@@ -16,7 +16,7 @@ public interface MeetingRoomService {
 	 * @param roomId
 	 * @return
 	 */
-	public MeetingRoom findMeetingRoomById(String roomId);
+	MeetingRoom findMeetingRoomById(String roomId);
 
 	/**
 	 * 根据会议室状态id查找会议室
@@ -24,14 +24,14 @@ public interface MeetingRoomService {
 	 * @param requestStateId
 	 * @return
 	 */
-	public List<MeetingRoom> findMeetingRoomByRSId(String requestStateId);
+	List<MeetingRoom> findMeetingRoomByRSId(String requestStateId);
 
 	/**
 	 * 查找所有的会议室
 	 * 
 	 * @return
 	 */
-	public List<MeetingRoom> findMeetingRoomAll();
+	List<MeetingRoom> findMeetingRoomAll();
 
 	/**
 	 * 更新会议室(状态)
@@ -39,7 +39,7 @@ public interface MeetingRoomService {
 	 * @param mr
 	 * @return
 	 */
-	public boolean updateMeetingRoom(MeetingRoom mr);
+	boolean updateMeetingRoom(MeetingRoom mr);
 
 	/**
 	 * 删除会议室通过会议室id
@@ -47,7 +47,7 @@ public interface MeetingRoomService {
 	 * @param roomId
 	 * @return
 	 */
-	public boolean deleteMeetingRoomById(String roomId);
+	boolean deleteMeetingRoomById(String roomId);
 
 	/**
 	 * 添加会议室
@@ -55,7 +55,7 @@ public interface MeetingRoomService {
 	 * @param mr
 	 * @return
 	 */
-	public boolean addMeetingRoom(MeetingRoom mr);
+	boolean addMeetingRoom(MeetingRoom mr);
 
 	/**
 	 * 根据会议室编号修改会议室使用状态
@@ -64,5 +64,5 @@ public interface MeetingRoomService {
 	 * @param requestStateId
 	 * @return
 	 */
-	public boolean updateRequest(int roomId, int requestStateId);
+	boolean updateRequest(int roomId, int requestStateId);
 }

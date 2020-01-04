@@ -15,7 +15,7 @@ public interface ProjectTypeDao {
 	 * 
 	 * @return
 	 */
-	public List<ProjectType> findProTypeAll();
+	List<ProjectType> findProTypeAll();
 	
 	/**
 	 * 根据项目类型id查找项目类型
@@ -23,5 +23,5 @@ public interface ProjectTypeDao {
 	 * @param proTid
 	 * @return
 	 */
-	public ProjectType findProTypeByPTId(int proTid);
+	ProjectType findProTypeByPTId(int proTid);
 }

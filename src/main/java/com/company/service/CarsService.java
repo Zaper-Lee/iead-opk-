@@ -16,7 +16,7 @@ public interface CarsService {
 	 * @param carId
 	 * @return
 	 */
-	public Cars findCarsById(String carId);
+	Cars findCarsById(String carId);
 	
 	/**
 	 * 根据 车辆类型id查询车辆
@@ -24,7 +24,7 @@ public interface CarsService {
 	 * @param carId
 	 * @return
 	 */
-	public List<Cars> findCarsByCTId(String carTypeId);
+	List<Cars> findCarsByCTId(String carTypeId);
 	
 	/**
 	 * 根据状态id查找车辆
@@ -32,14 +32,14 @@ public interface CarsService {
 	 * @param requestStateId
 	 * @return
 	 */
-	public List<Cars> findCarsByRSId(String requestStateId);
+	List<Cars> findCarsByRSId(String requestStateId);
 	
 	/**
 	 * 查询所有的车辆
 	 * 
 	 * @return
 	 */
-	public List<Cars> findCarsAll();
+	List<Cars> findCarsAll();
 	
 	/**
 	 * 更新车辆信息
@@ -47,7 +47,7 @@ public interface CarsService {
 	 * @param mr
 	 * @return
 	 */
-	public boolean updateCars(Cars cars);
+	boolean updateCars(Cars cars);
 	
 	/**
 	 * 根据车辆id删除车辆
@@ -55,7 +55,7 @@ public interface CarsService {
 	 * @param carId
 	 * @return
 	 */
-	public boolean deleteCarsById(String carId);
+	boolean deleteCarsById(String carId);
 	
 	/**
 	 * 添加一个车辆
@@ -63,9 +63,9 @@ public interface CarsService {
 	 * @param mr
 	 * @return
 	 */
-	public boolean addCars(Cars cars);
+	boolean addCars(Cars cars);
 	/**
 	 * 批量删除
 	 */
-	public boolean deleteCarArray(int[] carIds);
+	boolean deleteCarArray(int[] carIds);
 }

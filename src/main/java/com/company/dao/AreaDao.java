@@ -18,12 +18,12 @@ public interface AreaDao {
 	 * @param cityId
 	 * @return
 	 */
-	public List<Area> findAreasByCid(int cityId);
+	List<Area> findAreasByCid(int cityId);
 	
 	/**
 	 * 根据区县id查询出对应的区县对象
 	 * @param area
 	 * @return
 	 */
-	public Area findAreastByAid(int areaId);
+	 Area findAreastByAid(int areaId);
 }

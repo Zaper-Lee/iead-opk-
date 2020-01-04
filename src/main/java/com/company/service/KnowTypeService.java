@@ -16,12 +16,12 @@ public interface KnowTypeService {
 	 * @param knowTypeId
 	 * @return
 	 */
-	public KnowType findKnowTypeByKTId(String knowTypeId);
+	KnowType findKnowTypeByKTId(String knowTypeId);
 	
 	/**
 	 * 查找所有的知识类型
 	 * 
 	 * @return
 	 */
-	public List<KnowType> findKnowTypeAll();
+	List<KnowType> findKnowTypeAll();
 }

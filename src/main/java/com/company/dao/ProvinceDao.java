@@ -15,7 +15,7 @@ public interface ProvinceDao {
 	 * 
 	 * @return 省份列表
 	 */
-	public List<Province> findProvinceAll();
+	List<Province> findProvinceAll();
 
 	/**
 	 * 根据省份id查询省份对象
@@ -23,5 +23,5 @@ public interface ProvinceDao {
 	 * @param provinceId
 	 * @return
 	 */
-	public Province findProvince(int provinceId);
+	Province findProvince(int provinceId);
 }

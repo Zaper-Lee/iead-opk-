@@ -13,14 +13,14 @@ public interface SuggestionDao {
 	 * 
 	 * @return
 	 */
-	public List<Suggestion> findSugAll();
+	List<Suggestion> findSugAll();
 	
 	/**
 	 * 通过意见id查找意见
 	 * 
 	 * @return
 	 */
-	public Suggestion findSugBySid(int sugId);	
+	Suggestion findSugBySid(int sugId);
 	
 	/**
 	 * 通过用户查找当前用户的所有意见
@@ -28,7 +28,7 @@ public interface SuggestionDao {
 	 * @param uId
 	 * @return
 	 */
-	public List<Suggestion> findSugByUid(int uId);
+	List<Suggestion> findSugByUid(int uId);
 	
 	/**
 	 * 通过时间段查找意见
@@ -37,7 +37,7 @@ public interface SuggestionDao {
 	 * @param endDate
 	 * @return
 	 */
-	public List<Suggestion> findSugByDate(@Param(value = "startDate") Date startDate, @Param(value = "endDate") Date endDate);
+	List<Suggestion> findSugByDate(@Param(value = "startDate") Date startDate, @Param(value = "endDate") Date endDate);
 
 	/**
 	 * 通过用户意见id删除意见
@@ -45,7 +45,7 @@ public interface SuggestionDao {
 	 * @param sugId
 	 * @return
 	 */
-	public int deleteSugBySid(int sugId);
+	int deleteSugBySid(int sugId);
 	
 	/**
 	 * 通过用户id删除意见
@@ -53,7 +53,7 @@ public interface SuggestionDao {
 	 * @param uI
 	 * @return
 	 */
-	public int deleteSugByUid(int uId);
+	int deleteSugByUid(int uId);
 	
 	/**
 	 * 通过时间段删除意见
@@ -61,7 +61,7 @@ public interface SuggestionDao {
 	 * @param uId
 	 * @return
 	 */
-	public int deleteSugByDate(@Param(value = "startDate") Date startDate, @Param(value = "endDate") Date endDate);
+	int deleteSugByDate(@Param(value = "startDate") Date startDate, @Param(value = "endDate") Date endDate);
 	
 	/**
 	 * 修改意见
@@ -69,7 +69,7 @@ public interface SuggestionDao {
 	 * @param suggestion
 	 * @return
 	 */
-	public int updateSug(Suggestion suggestion);
+	int updateSug(Suggestion suggestion);
 	
 	/**
 	 * 添加意见
@@ -77,5 +77,5 @@ public interface SuggestionDao {
 	 * @param suggestion
 	 * @return
 	 */
-	public int addSug(Suggestion suggestion);
+	int addSug(Suggestion suggestion);
 }

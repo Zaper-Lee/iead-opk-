@@ -17,7 +17,7 @@ public interface OfficeService {
 	 * @param oId
 	 * @return
 	 */
-	public Office findOfficeByOId(String oId);
+	Office findOfficeByOId(String oId);
 	
 	/**
 	 * 根据请求状态查找办公用品
@@ -25,14 +25,14 @@ public interface OfficeService {
 	 * @param requestStateId
 	 * @return
 	 */
-	public List<Office> findOfficeByRSId(String requestStateId);
+	List<Office> findOfficeByRSId(String requestStateId);
 	
 	/**
 	 * 查找所有的办公用品
 	 * 
 	 * @return
 	 */
-	public List<Office> findOfficeAll();
+	List<Office> findOfficeAll();
 	
 	/**
 	 * 更新办公用品
@@ -40,7 +40,7 @@ public interface OfficeService {
 	 * @param office
 	 * @return
 	 */
-	public boolean updateOffice(Office office);
+	boolean updateOffice(Office office);
 	
 	/**
 	 * 根据办公用品id删除办公用品
@@ -48,7 +48,7 @@ public interface OfficeService {
 	 * @param oId
 	 * @return
 	 */
-	public boolean deleteOfficeByOId(String oId);
+	boolean deleteOfficeByOId(String oId);
 	
 	/**
 	 * 添加一个办公用品
@@ -56,9 +56,9 @@ public interface OfficeService {
 	 * @param office
 	 * @return
 	 */
-	public boolean addOffice(Office office);
+	boolean addOffice(Office office);
 	/**
 	 * 批量删除
 	 */
-	public boolean deleteArr(int[] oIds);
+	boolean deleteArr(int[] oIds);
 }

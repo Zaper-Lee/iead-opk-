@@ -13,7 +13,7 @@ public interface MeetingService {
 	 * 
 	 * @return
 	 */
-	public List<Meeting> findMeetionAll();
+	List<Meeting> findMeetionAll();
 
 	/**
 	 * 通过会议主席查找会议
@@ -21,7 +21,7 @@ public interface MeetingService {
 	 * @param uId
 	 * @return
 	 */
-	public List<Meeting> findMeetionByChairman(String chairman);
+	List<Meeting> findMeetionByChairman(String chairman);
 
 	/**
 	 * 通过会议记录人查找会议
@@ -29,7 +29,7 @@ public interface MeetingService {
 	 * @param uId
 	 * @return
 	 */
-	public List<Meeting> findMeetionByRecorder(String recorder);
+	List<Meeting> findMeetionByRecorder(String recorder);
 
 	/**
 	 * 通过会议id查找会议
@@ -37,7 +37,7 @@ public interface MeetingService {
 	 * @param mId
 	 * @return
 	 */
-	public Meeting findMeetionByMId(String mId);
+	Meeting findMeetionByMId(String mId);
 
 	/**
 	 * 通过会议主题模糊查询会议(ajax)
@@ -45,7 +45,7 @@ public interface MeetingService {
 	 * @param theme
 	 * @return
 	 */
-	public List<Meeting> findMeetionByTheme(String theme);
+	List<Meeting> findMeetionByTheme(String theme);
 
 	/**
 	 * 根据会议时间段查找会议
@@ -54,7 +54,7 @@ public interface MeetingService {
 	 * @param endDate
 	 * @return
 	 */
-	public List<Meeting> findMeetionByDate(Date startDate, Date endDate);
+	List<Meeting> findMeetionByDate(Date startDate, Date endDate);
 
 	/**
 	 * 根据会议时间段和会议主席查找会议
@@ -63,7 +63,7 @@ public interface MeetingService {
 	 * @param endDate
 	 * @return
 	 */
-	public List<Meeting> findMeetionDateAndChairman(String chairman, Date startDate, Date endDate);
+	List<Meeting> findMeetionDateAndChairman(String chairman, Date startDate, Date endDate);
 
 	/**
 	 * 根据会议时间段和会议纪要人查找会议
@@ -72,7 +72,7 @@ public interface MeetingService {
 	 * @param endDate
 	 * @return
 	 */
-	public List<Meeting> findMeetionDateAndRecorder(String recorder, Date startDate, Date endDate);
+	List<Meeting> findMeetionDateAndRecorder(String recorder, Date startDate, Date endDate);
 
 	/**
 	 * 根据会议时间段、会议主席以及会议纪要人查找会议
@@ -81,7 +81,7 @@ public interface MeetingService {
 	 * @param endDate
 	 * @return
 	 */
-	public List<Meeting> findMeetionDateAndRecorderAndChairman(String chairman, String recorder, Date startDate,
+	List<Meeting> findMeetionDateAndRecorderAndChairman(String chairman, String recorder, Date startDate,
                                                                Date endDate);
 
 	/**
@@ -90,7 +90,7 @@ public interface MeetingService {
 	 * @param meeting
 	 * @return
 	 */
-	public boolean updateMeeting(Meeting meeting);
+	boolean updateMeeting(Meeting meeting);
 
 	/**
 	 * 添加会议
@@ -98,14 +98,14 @@ public interface MeetingService {
 	 * @param meeting
 	 * @return
 	 */
-	public boolean addMeeting(Meeting meeting);
+	boolean addMeeting(Meeting meeting);
 
 	/**
 	 * @param approveStateId
 	 * @param mId
 	 * @return
 	 */
-	public boolean updateApprove(int approveStateId, int mId);
+	boolean updateApprove(int approveStateId, int mId);
 
 	/**
 	 * 通过会议编号删除会议记录
@@ -113,12 +113,12 @@ public interface MeetingService {
 	 * @param mId
 	 * @return
 	 */
-	public boolean deleteMeetingByMid(int mId);
+	boolean deleteMeetingByMid(int mId);
 
 	/**
 	 * 更新会议纪要
 	 * @param approveStateId 会议纪要
 	 * @return 更新结果
 	 */
-	public boolean updateContent(String content, int mId);
+	boolean updateContent(String content, int mId);
 }

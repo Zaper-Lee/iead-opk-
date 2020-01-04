@@ -17,7 +17,7 @@ public interface SalaryDao {
 	 * @param id
 	 * @return
 	 */
-	public Salary findSalaryById(int id);
+	Salary findSalaryById(int id);
 	
 	/**
 	 * 根据职等id与职位id共同确认薪资标准
@@ -26,7 +26,7 @@ public interface SalaryDao {
 	 * @param jobId
 	 * @return
 	 */
-	public Salary findSalary(@Param(value = "lId") int lId, @Param(value = "jobId") int jobId);
+	Salary findSalary(@Param(value = "lId") int lId, @Param(value = "jobId") int jobId);
 
 	/**
 	 * 根据职位id查询薪资标准
@@ -34,7 +34,7 @@ public interface SalaryDao {
 	 * @param jobId
 	 * @return
 	 */
-	public List<Salary> findSalaryByJobId(int jobId);
+	List<Salary> findSalaryByJobId(int jobId);
 	
 	/**
 	 * 更新薪资标准
@@ -42,5 +42,5 @@ public interface SalaryDao {
 	 * @param salary
 	 * @return
 	 */
-	public int updateSalary(Salary salary);
+	int updateSalary(Salary salary);
 }

@@ -12,7 +12,7 @@ public interface ProknowDao {
 	 * @param dId
 	 * @return
 	 */
-	public List<Proknow> findProKnowByPId(int pId);
+	List<Proknow> findProKnowByPId(int pId);
 	
 	
 	/**
@@ -21,12 +21,12 @@ public interface ProknowDao {
 	 * @param dId
 	 * @return
 	 */
-	public int deleteProKnowByPId(int pId);
+	int deleteProKnowByPId(int pId);
 	
 	/**
 	 * 添加项目支持
 	 * 
 	 * @return
 	 */
-	public int addProKnow(Proknow proKnow);
+	int addProKnow(Proknow proKnow);
 }

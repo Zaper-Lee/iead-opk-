@@ -17,7 +17,7 @@ public interface MeetingRoomDao {
 	 * @param roomId
 	 * @return
 	 */
-	public MeetingRoom findMeetingRoomById(int roomId);
+	MeetingRoom findMeetingRoomById(int roomId);
 	
 	/**
 	 * 根据会议室状态id查找会议室
@@ -25,14 +25,14 @@ public interface MeetingRoomDao {
 	 * @param requestStateId
 	 * @return
 	 */
-	public List<MeetingRoom> findMeetingRoomByRSId(int requestStateId);
+	List<MeetingRoom> findMeetingRoomByRSId(int requestStateId);
 	
 	/**
 	 * 查找所有的会议室
 	 * 
 	 * @return
 	 */
-	public List<MeetingRoom> findMeetingRoomAll();
+	List<MeetingRoom> findMeetingRoomAll();
 	
 	/**
 	 * 更新会议室(状态)
@@ -40,7 +40,7 @@ public interface MeetingRoomDao {
 	 * @param mr
 	 * @return
 	 */
-	public int updateMeetingRoom(MeetingRoom mr);
+	int updateMeetingRoom(MeetingRoom mr);
 	
 	/**
 	 * 删除会议室通过会议室id
@@ -48,7 +48,7 @@ public interface MeetingRoomDao {
 	 * @param roomId
 	 * @return
 	 */
-	public int deleteMeetingRoomById(int roomId);
+	int deleteMeetingRoomById(int roomId);
 	
 	/**
 	 * 添加会议室
@@ -56,7 +56,7 @@ public interface MeetingRoomDao {
 	 * @param mr
 	 * @return
 	 */
-	public int addMeetingRoom(MeetingRoom mr);
+	int addMeetingRoom(MeetingRoom mr);
 	
 	/**
 	 * 根据会议室编号修改会议室使用状态
@@ -64,5 +64,5 @@ public interface MeetingRoomDao {
 	 * @param requestStateId
 	 * @return
 	 */
-	public int updateRequest(@Param("roomId") int roomId, @Param("requestStateId") int requestStateId);
+	int updateRequest(@Param("roomId") int roomId, @Param("requestStateId") int requestStateId);
 }

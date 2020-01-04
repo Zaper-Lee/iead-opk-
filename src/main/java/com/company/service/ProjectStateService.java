@@ -15,7 +15,7 @@ public interface ProjectStateService {
 	 * 
 	 * @return
 	 */
-	public List<ProjectState> findProStateAll();
+	List<ProjectState> findProStateAll();
 	
 	/**
 	 * 根据项目类型id查找项目类型
@@ -23,5 +23,5 @@ public interface ProjectStateService {
 	 * @param proTid
 	 * @return
 	 */
-	public ProjectState findProStateByPTId(String stateId);
+	ProjectState findProStateByPTId(String stateId);
 }

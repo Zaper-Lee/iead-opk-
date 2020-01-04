@@ -17,7 +17,7 @@ public interface EmailDao {
 	 * 
 	 * @return
 	 */
-	public List<Email> findEmailAll();
+	List<Email> findEmailAll();
 	
 	/**
 	 * 按照邮件id查找邮件
@@ -25,7 +25,7 @@ public interface EmailDao {
 	 * @param emailId
 	 * @return
 	 */
-	public Email findEmailByEId(int emailId);
+	Email findEmailByEId(int emailId);
 	
 	/**
 	 * 按照指定发件用户id，查找所有邮件
@@ -33,7 +33,7 @@ public interface EmailDao {
 	 * @param uId
 	 * @return
 	 */
-	public List<Email> findEmailBySendUId(int sendUId);
+	List<Email> findEmailBySendUId(int sendUId);
 	
 	/**
 	 * 按照指定收件用户id，查找所有邮件
@@ -41,7 +41,7 @@ public interface EmailDao {
 	 * @param uId
 	 * @return
 	 */
-	public List<Email> findEmailByRecUid(int recUid);
+	List<Email> findEmailByRecUid(int recUid);
 	
 	/**
 	 * 按照指定时间段查找邮件
@@ -50,7 +50,7 @@ public interface EmailDao {
 	 * @param endDate
 	 * @return
 	 */
-	public List<Email> findEmailByDate(@Param(value = "startDate") Date startDate, @Param(value = "endDate") Date endDate);
+	List<Email> findEmailByDate(@Param(value = "startDate") Date startDate, @Param(value = "endDate") Date endDate);
 
 	/**
 	 * 根据邮件id删除邮件
@@ -58,7 +58,7 @@ public interface EmailDao {
 	 * @param emailId
 	 * @return
 	 */
-	public int deleteEmailByEId(int emailId);
+	int deleteEmailByEId(int emailId);
 	
 	/**
 	 * 根据发烧用用户id删除邮件
@@ -66,7 +66,7 @@ public interface EmailDao {
 	 * @param uId
 	 * @return
 	 */
-	public int deleteEmailByUId(int uId);
+	int deleteEmailByUId(int uId);
 	
 	/**
 	 * 根据时间段删除邮件
@@ -75,5 +75,5 @@ public interface EmailDao {
 	 * @param endDate
 	 * @return
 	 */
-	public int deleteEmailByDate(@Param(value = "startDate") Date startDate, @Param(value = "endDate") Date endDate);
+	int deleteEmailByDate(@Param(value = "startDate") Date startDate, @Param(value = "endDate") Date endDate);
 }

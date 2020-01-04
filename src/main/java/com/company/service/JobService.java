@@ -17,12 +17,12 @@ public interface JobService {
 	 * @param jobId
 	 * @return
 	 */
-	public Job findJobBylId(String jobId);
+	Job findJobBylId(String jobId);
 	
 	/**
 	 * 查看所有职称
 	 * 
 	 * @return
 	 */
-	public List<Job> findJobAll();
+	List<Job> findJobAll();
 }

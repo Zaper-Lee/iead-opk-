@@ -17,7 +17,7 @@ public interface ProjectService {
 	 * 
 	 * @return
 	 */
-	public List<Project> findProAll();
+	List<Project> findProAll();
 
 	/**
 	 * 根据项目ID查找项目
@@ -25,7 +25,7 @@ public interface ProjectService {
 	 * @param pId
 	 * @return
 	 */
-	public Project findProByPId(String pId);
+	Project findProByPId(String pId);
 
 	/**
 	 * 通过项目名查询项目(ajax动态实现模糊查询)
@@ -33,7 +33,7 @@ public interface ProjectService {
 	 * @param pName
 	 * @return
 	 */
-	public List<Project> findProByPName(String pName);
+	List<Project> findProByPName(String pName);
 
 	/**
 	 * 通过项目类型查找项目
@@ -41,7 +41,7 @@ public interface ProjectService {
 	 * @param proTid
 	 * @return
 	 */
-	public List<Project> findProByTid(String proTid);
+	List<Project> findProByTid(String proTid);
 
 	/**
 	 * 通过项目状态id查找项目
@@ -49,7 +49,7 @@ public interface ProjectService {
 	 * @param sId
 	 * @return
 	 */
-	public List<Project> findProBySid(String stateId);
+	List<Project> findProBySid(String stateId);
 
 	/**
 	 * 通过部门id查找项目
@@ -57,7 +57,7 @@ public interface ProjectService {
 	 * @param dId
 	 * @return
 	 */
-	public List<Project> findProByDid(String dep_did);
+	List<Project> findProByDid(String dep_did);
 
 	/**
 	 * 通过时间段查找项目
@@ -66,7 +66,7 @@ public interface ProjectService {
 	 * @param endDate
 	 * @return
 	 */
-	public List<Project> findProByDate(Date startDate, Date endDate);
+	List<Project> findProByDate(Date startDate, Date endDate);
 
 	/**
 	 * 通过项目id，以及时间段共同查找项目
@@ -76,12 +76,12 @@ public interface ProjectService {
 	 * @param endDate
 	 * @return
 	 */
-	public List<Project> findPro(String dep_did, Date startDate, Date endDate);
+	List<Project> findPro(String dep_did, Date startDate, Date endDate);
 
 	/**
 	 * 删除所有项目
 	 */
-	public boolean deleteProAll();
+	boolean deleteProAll();
 
 	/**
 	 * 通过项目id删除项目
@@ -89,7 +89,7 @@ public interface ProjectService {
 	 * @param pId
 	 * @return
 	 */
-	public boolean deleteProByPId(String pId);
+	boolean deleteProByPId(String pId);
 
 	/**
 	 * 通过项目类型id删除项目
@@ -97,7 +97,7 @@ public interface ProjectService {
 	 * @param proTid
 	 * @return
 	 */
-	public boolean deleteProByTId(String proTid);
+	boolean deleteProByTId(String proTid);
 
 	/**
 	 * 通过部门id删除项目
@@ -105,7 +105,7 @@ public interface ProjectService {
 	 * @param dep_did
 	 * @return
 	 */
-	public boolean deleteProByDId(String dep_did);
+	boolean deleteProByDId(String dep_did);
 
 	/**
 	 * 通过状态id删除项目
@@ -113,7 +113,7 @@ public interface ProjectService {
 	 * @param sId
 	 * @return
 	 */
-	public boolean deleteProBySId(String stateId);
+	boolean deleteProBySId(String stateId);
 
 	/**
 	 * 更新项目信息
@@ -121,7 +121,7 @@ public interface ProjectService {
 	 * @param pro
 	 * @return
 	 */
-	public boolean updatePro(Project pro);
+	boolean updatePro(Project pro);
 
 	/**
 	 * 创建一个项目
@@ -129,12 +129,12 @@ public interface ProjectService {
 	 * @param pro
 	 * @return
 	 */
-	public boolean addPro(Project pro);
+	boolean addPro(Project pro);
 
 	/**
 	 * 提交项目修改项目状态ID
 	 */
-	public int submitproject(int approveStateId, int pId);
+	int submitproject(int approveStateId, int pId);
 
 	/**
 	 * 通过项目审批状态id查找项目
@@ -142,7 +142,7 @@ public interface ProjectService {
 	 * @param sId
 	 * @return
 	 */
-	public List<Project> findProByASid(String approveStateId);
+	List<Project> findProByASid(String approveStateId);
 	
 	/**
 	 * 根据pid更新项目stateid信息
@@ -150,9 +150,9 @@ public interface ProjectService {
 	 * @param pro
 	 * @return
 	 */
-	public int updatePro(String pId, String stateId);
+	int updatePro(String pId, String stateId);
 	/**
 	 * 批量删除
 	 */
-	public boolean deletePro(int[] pIds);
+	boolean deletePro(int[] pIds);
 }

@@ -16,7 +16,7 @@ public interface SalaryService {
 	 * @param id
 	 * @return
 	 */
-	public Salary findSalaryById(String id);
+	Salary findSalaryById(String id);
 
 	/**
 	 * 根据职等id与职位id共同确认薪资标准
@@ -25,7 +25,7 @@ public interface SalaryService {
 	 * @param jobId
 	 * @return
 	 */
-	public Salary findSalary(String lId, String jobId);
+	Salary findSalary(String lId, String jobId);
 
 	/**
 	 * 根据职位id查询薪资标准
@@ -33,7 +33,7 @@ public interface SalaryService {
 	 * @param jobId
 	 * @return
 	 */
-	public List<Salary> findSalaryByJobId(String jobId);
+	List<Salary> findSalaryByJobId(String jobId);
 
 	/**
 	 * 更新薪资标准
@@ -41,5 +41,5 @@ public interface SalaryService {
 	 * @param salary
 	 * @return
 	 */
-	public boolean updateSalary(Salary salary);
+	boolean updateSalary(Salary salary);
 }

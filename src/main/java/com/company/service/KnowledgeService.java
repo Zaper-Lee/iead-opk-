@@ -16,7 +16,7 @@ public interface KnowledgeService {
 	 * 
 	 * @return
 	 */
-	public Knowledge findKnowByKId(String knowId);
+	Knowledge findKnowByKId(String knowId);
 	
 	/**
 	 * 通过知识类型id查找知识
@@ -24,7 +24,7 @@ public interface KnowledgeService {
 	 * @param knowTypeId
 	 * @return
 	 */
-	public List<Knowledge> findKnowByTId(String knowTypeId);
+	List<Knowledge> findKnowByTId(String knowTypeId);
 	
 	/**
 	 * 根据时间段查找知识
@@ -33,7 +33,7 @@ public interface KnowledgeService {
 	 * @param endDate
 	 * @return
 	 */
-	public List<Knowledge> findKnowByDate(Date startDate, Date endDate);
+	List<Knowledge> findKnowByDate(Date startDate, Date endDate);
 	
 	/**
 	 * 添加一个知识
@@ -41,7 +41,7 @@ public interface KnowledgeService {
 	 * @param knowledge
 	 * @return
 	 */
-	public boolean addKnow(Knowledge knowledge);
+	boolean addKnow(Knowledge knowledge);
 	
 	/**
 	 * 更新知识
@@ -49,7 +49,7 @@ public interface KnowledgeService {
 	 * @param knowledge
 	 * @return
 	 */
-	public boolean updateKnow(Knowledge knowledge);
+	boolean updateKnow(Knowledge knowledge);
 	
 	/**
 	 * 通过知识id查找知识
@@ -57,5 +57,5 @@ public interface KnowledgeService {
 	 * @param knowId
 	 * @return
 	 */
-	public boolean deleteKnow(String knowId);
+	boolean deleteKnow(String knowId);
 }

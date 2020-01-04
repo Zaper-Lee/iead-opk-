@@ -15,12 +15,12 @@ public interface ApproveStateDao {
 	 * @param approveStateId
 	 * @return
 	 */
-	public List<ApproveState> findASById(int approveStateId);
+	List<ApproveState> findASById(int approveStateId);
 	
 	/**
 	 * 查询所有审批状态
 	 * 
 	 * @return
 	 */
-	public List<ApproveState> findASAll();
+	List<ApproveState> findASAll();
 }

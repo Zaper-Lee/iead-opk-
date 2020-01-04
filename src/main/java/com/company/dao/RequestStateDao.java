@@ -15,12 +15,12 @@ public interface RequestStateDao {
 	 * 
 	 * @return
 	 */
-	public List<RequestState> findRSAll();
+	List<RequestState> findRSAll();
 
 	/**
 	 * 按照状态id查找状态
 	 * 
 	 * @return
 	 */
-	public RequestState findRSById(int requestStateId);
+	RequestState findRSById(int requestStateId);
 }

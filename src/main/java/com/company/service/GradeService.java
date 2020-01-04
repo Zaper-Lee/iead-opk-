@@ -14,7 +14,7 @@ public interface GradeService {
 	 * 
 	 * @return
 	 */
-	public List<Grade> findGradeAll();
+	List<Grade> findGradeAll();
 	
 	/**
 	 * 根据考核等级id查找考核等级
@@ -22,5 +22,5 @@ public interface GradeService {
 	 * @param gradeId
 	 * @return
 	 */
-	public Grade findGradeByGId(String gradeId);
+	Grade findGradeByGId(String gradeId);
 }

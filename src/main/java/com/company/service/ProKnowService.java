@@ -15,7 +15,7 @@ public interface ProKnowService {
 	 * @param pId
 	 * @return
 	 */
-	public List<Proknow> findProKnowByPId(String pId);
+	List<Proknow> findProKnowByPId(String pId);
 	
 	
 	/**
@@ -24,12 +24,12 @@ public interface ProKnowService {
 	 * @param pId
 	 * @return
 	 */
-	public int deleteProKnowByPId(String pId);
+	int deleteProKnowByPId(String pId);
 	
 	/**
 	 * 添加项目支持
 	 * 
 	 * @return
 	 */
-	public boolean addProKnow(Proknow proKnow);
+	boolean addProKnow(Proknow proKnow);
 }

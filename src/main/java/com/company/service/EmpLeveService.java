@@ -16,12 +16,12 @@ public interface EmpLeveService {
 	 * @param lId
 	 * @return
 	 */
-	public EmpLevel findELBylId(String lId);
+	EmpLevel findELBylId(String lId);
 	
 	/**
 	 * 查看所有职等
 	 * 
 	 * @return
 	 */
-	public List<EmpLevel> findELAll();
+	List<EmpLevel> findELAll();
 }

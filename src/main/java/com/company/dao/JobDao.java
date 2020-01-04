@@ -15,12 +15,12 @@ public interface JobDao {
 	 * @param jobId
 	 * @return
 	 */
-	public Job findELBylId(int jobId);
+	Job findELBylId(int jobId);
 	
 	/**
 	 * 查看所有职称
 	 * 
 	 * @return
 	 */
-	public List<Job> findELAll();
+	List<Job> findELAll();
 }

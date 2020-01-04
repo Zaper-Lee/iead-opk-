@@ -16,7 +16,7 @@ public interface UserDao {
 	 * 
 	 * @return
 	 */
-	public List<User> findUserAll();
+	List<User> findUserAll();
 
 	/**
 	 * 通过部门id查找用户
@@ -24,19 +24,19 @@ public interface UserDao {
 	 * @param dId
 	 * @return
 	 */
-	public List<User> findUserByDid(int dId);
+	List<User> findUserByDid(int dId);
 
 	/**
 	 * 通过用户名密码查询(登录用)
 	 */
-	public User findUserByName(@Param(value = "uName") String uName, @Param(value = "pass") String pass);
+	User findUserByName(@Param(value = "uName") String uName, @Param(value = "pass") String pass);
 
 	/**
 	 * 通过用户id查找用户
 	 * 
 	 * @param uId
 	 */
-	public User findUserByUid(int uId);
+	User findUserByUid(int uId);
 
 	/**
 	 * 根据职位查找用户
@@ -44,7 +44,7 @@ public interface UserDao {
 	 * @param jobId
 	 * @return
 	 */
-	public List<User> findUserByJobId(int jobId);
+	List<User> findUserByJobId(int jobId);
 	
 	/**
 	 * 根据职位与职等查找用户
@@ -53,12 +53,12 @@ public interface UserDao {
 	 * @param lId
 	 * @return
 	 */
-	public List<User> findUserByJobIdAndELId(@Param(value = "jobId") int jobId, @Param(value = "lId") int lId);
+	List<User> findUserByJobIdAndELId(@Param(value = "jobId") int jobId, @Param(value = "lId") int lId);
 	
 	/**
 	 * 注册用户
 	 */
-	public int regist(User user);
+	int regist(User user);
 
 	/**
 	 * 通过用户id删除用户
@@ -66,7 +66,7 @@ public interface UserDao {
 	 * @param uId
 	 * @return
 	 */
-	public int deleteUser(int uId);
+	int deleteUser(int uId);
 
 	/**
 	 * 根据部门id删除用户
@@ -74,7 +74,7 @@ public interface UserDao {
 	 * @param dId
 	 * @return
 	 */
-	public int deleteUserByDid(int dId);
+	int deleteUserByDid(int dId);
 
 	/**
 	 * 根据职位与职等删除用户
@@ -83,14 +83,14 @@ public interface UserDao {
 	 * @param lId
 	 * @return
 	 */
-	public int deleteUserByJobId(@Param(value = "jobId") int jobId, @Param(value = "lId") int lId);
+	int deleteUserByJobId(@Param(value = "jobId") int jobId, @Param(value = "lId") int lId);
 
 	/**
 	 * 删除所有用户
 	 * 
 	 * @return
 	 */
-	public int deleteUserAll();
+	int deleteUserAll();
 
 	/**
 	 * 更新用户信息
@@ -98,9 +98,9 @@ public interface UserDao {
 	 * @param user
 	 * @return
 	 */
-	public int upDate(User user);
+	int upDate(User user);
 	/**
 	 * 批量删除
 	 */
-	public  int deleteArray(int[] uIds);
+	int deleteArray(int[] uIds);
 }

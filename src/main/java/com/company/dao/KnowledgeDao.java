@@ -17,7 +17,7 @@ public interface KnowledgeDao {
 	 * 
 	 * @return
 	 */
-	public Knowledge findKnowByKId(int knowId);
+	Knowledge findKnowByKId(int knowId);
 	
 	/**
 	 * 通过知识类型id查找知识
@@ -25,7 +25,7 @@ public interface KnowledgeDao {
 	 * @param knowTypeId
 	 * @return
 	 */
-	public List<Knowledge> findKnowByTId(int knowTypeId);
+	List<Knowledge> findKnowByTId(int knowTypeId);
 	
 	/**
 	 * 根据时间段查找知识
@@ -34,7 +34,7 @@ public interface KnowledgeDao {
 	 * @param endDate
 	 * @return
 	 */
-	public List<Knowledge> findKnowByDate(@Param(value = "startDate") Date startDate, @Param(value = "endDate") Date endDate);
+	List<Knowledge> findKnowByDate(@Param(value = "startDate") Date startDate, @Param(value = "endDate") Date endDate);
 	
 	/**
 	 * 添加一个知识
@@ -42,7 +42,7 @@ public interface KnowledgeDao {
 	 * @param knowledge
 	 * @return
 	 */
-	public int addKnow(Knowledge knowledge);
+	int addKnow(Knowledge knowledge);
 	
 	/**
 	 * 更新知识
@@ -50,7 +50,7 @@ public interface KnowledgeDao {
 	 * @param knowledge
 	 * @return
 	 */
-	public int updateKnow(Knowledge knowledge);
+	int updateKnow(Knowledge knowledge);
 	
 	/**
 	 * 通过知识id查找知识
@@ -58,5 +58,5 @@ public interface KnowledgeDao {
 	 * @param knowId
 	 * @return
 	 */
-	public int deleteKnow(int knowId);
+	int deleteKnow(int knowId);
 }

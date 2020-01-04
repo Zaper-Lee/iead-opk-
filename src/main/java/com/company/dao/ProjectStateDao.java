@@ -16,7 +16,7 @@ public interface ProjectStateDao {
 	 * 
 	 * @return
 	 */
-	public List<ProjectState> findProStateAll();
+	List<ProjectState> findProStateAll();
 	
 	/**
 	 * 根据项目类型id查找项目类型
@@ -24,5 +24,5 @@ public interface ProjectStateDao {
 	 * @param proTid
 	 * @return
 	 */
-	public ProjectState findProStateByPTId(int stateId);
+	ProjectState findProStateByPTId(int stateId);
 }

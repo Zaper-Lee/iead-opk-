@@ -15,7 +15,7 @@ public interface ProjectTypeService {
 	 * 
 	 * @return
 	 */
-	public List<ProjectType> findProTypeAll();
+	List<ProjectType> findProTypeAll();
 	
 	/**
 	 * 根据项目类型id查找项目类型
@@ -23,5 +23,5 @@ public interface ProjectTypeService {
 	 * @param proTid
 	 * @return
 	 */
-	public ProjectType findProTypeByPTId(String proTid);
+	ProjectType findProTypeByPTId(String proTid);
 }

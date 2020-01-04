@@ -17,12 +17,12 @@ public interface EmpLevelDao {
 	 * @param lId
 	 * @return
 	 */
-	public EmpLevel findELBylId(int lId);
+	EmpLevel findELBylId(int lId);
 	
 	/**
 	 * 查看所有职等
 	 * 
 	 * @return
 	 */
-	public List<EmpLevel> findELAll();
+	List<EmpLevel> findELAll();
 }

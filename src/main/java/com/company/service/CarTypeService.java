@@ -15,12 +15,12 @@ public interface CarTypeService {
 	 * 
 	 * @return
 	 */
-	public  CarType findCarsTypeByCTId(String carTypeId);
+	CarType findCarsTypeByCTId(String carTypeId);
 	
 	/**
 	 * 查询所有的车辆类型
 	 * 
 	 * @return
 	 */
-	public  List<CarType> findCarsTypeAll();
+	List<CarType> findCarsTypeAll();
 }

@@ -15,12 +15,12 @@ public interface RequestStateService {
 	 * 
 	 * @return
 	 */
-	public List<RequestState> findRSAll();
+	List<RequestState> findRSAll();
 	
 	/**
 	 * 按照状态id查找状态
 	 * 
 	 * @return
 	 */
-	public RequestState findRSById(String requestStateId);
+	RequestState findRSById(String requestStateId);
 }

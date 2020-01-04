@@ -13,7 +13,7 @@ public interface UserService {
 	 * @param uId
 	 * @return
 	 */
-	public User findUserByUId(String uId);
+	User findUserByUId(String uId);
 
 	/**
 	 * 通过部门id查找用户
@@ -21,12 +21,12 @@ public interface UserService {
 	 * @param dId
 	 * @return
 	 */
-	public List<User> findUserByDid(String dId);
+	List<User> findUserByDid(String dId);
 	
 	/**
 	 * 通过用户名密码查询(登录用)
 	 */
-	public User findUserByName(String uName, String pass);
+	 User findUserByName(String uName, String pass);
 
 	/**
 	 * 按员工职位查找用户
@@ -34,7 +34,7 @@ public interface UserService {
 	 * @param jobId
 	 * @return
 	 */
-	public List<User> findUserByJobId(String jobId);
+	List<User> findUserByJobId(String jobId);
 	
 	/**
 	 * 按员工职位和职等查找用户
@@ -43,7 +43,7 @@ public interface UserService {
 	 * @param lId
 	 * @return
 	 */
-	public List<User> findUserByJobIdAndELId(String jobId, String lId);
+	List<User> findUserByJobIdAndELId(String jobId, String lId);
 	
 	/**
 	 * 查询所有部门经理
@@ -51,7 +51,7 @@ public interface UserService {
 	 * @param jobId
 	 * @return
 	 */
-	public List<User> findDeptLeaderAll();
+	 List<User> findDeptLeaderAll();
 	
 	/**
 	 * 通过部门id查找用户(不包含项目领导返回)
@@ -59,7 +59,7 @@ public interface UserService {
 	 * @param dId
 	 * @return
 	 */
-	public List<User> findUserByDidNoLeader(String dId);
+	List<User> findUserByDidNoLeader(String dId);
 	
 	/**
 	 * 根据用户id查找用户
@@ -67,7 +67,7 @@ public interface UserService {
 	 * @param uId
 	 * @return
 	 */
-	public UserVo findUserVoByUId(String uId);
+	UserVo findUserVoByUId(String uId);
 	
 	/**
 	 * 查询所有部门经理(返回vo)
@@ -75,7 +75,7 @@ public interface UserService {
 	 * @param jobId
 	 * @return
 	 */
-	public List<UserVo> findDeptLeaderVoAll();
+	List<UserVo> findDeptLeaderVoAll();
 	
 	/**
 	 * 通过部门id查找用户(不包含项目领导返回vo)
@@ -83,7 +83,7 @@ public interface UserService {
 	 * @param dId
 	 * @return
 	 */
-	public List<UserVo> findUserVoByDidNoLeader(String dId);
+	List<UserVo> findUserVoByDidNoLeader(String dId);
 	
 	/**
 	 * 根据用户id查找用户(返回vo)
@@ -91,19 +91,19 @@ public interface UserService {
 	 * @param uId
 	 * @return
 	 */
-	public List<UserVo> findUserVoAll();
+	List<UserVo> findUserVoAll();
 	
 	/**
 	 * 注册用户
 	 */
-	public boolean regist(User user);
+	boolean regist(User user);
 
 	/**
 	 * 查询所有用户
 	 * 
 	 * @return
 	 */
-	public List<User> findUserAll();
+	List<User> findUserAll();
 
 	/**
 	 * 通过用户id删除用户
@@ -111,7 +111,7 @@ public interface UserService {
 	 * @param uId
 	 * @return
 	 */
-	public boolean deleteUser(String uId);
+	boolean deleteUser(String uId);
 
 	/**
 	 * 根据部门id删除用户
@@ -119,7 +119,7 @@ public interface UserService {
 	 * @param dId
 	 * @return
 	 */
-	public boolean deleteUserByDid(String dId);
+	boolean deleteUserByDid(String dId);
 
 	/**
 	 * 更新用户信息
@@ -127,9 +127,9 @@ public interface UserService {
 	 * @param user
 	 * @return
 	 */
-	public boolean update(User user);
+	boolean update(User user);
 	/**
 	 * 批量删除
 	 */
-	public boolean deleteArray(int[] uIds);
+	boolean deleteArray(int[] uIds);
 }

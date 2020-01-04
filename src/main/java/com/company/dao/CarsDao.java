@@ -15,7 +15,7 @@ public interface CarsDao {
 	 * @param carId
 	 * @return
 	 */
-	public Cars findCarsById(int carId);
+	Cars findCarsById(int carId);
 	
 	/**
 	 * 根据 车辆类型id查询车辆
@@ -23,7 +23,7 @@ public interface CarsDao {
 	 * @param carId
 	 * @return
 	 */
-	public List<Cars> findCarsByCTId(int carTypeId);
+	List<Cars> findCarsByCTId(int carTypeId);
 	
 	/**
 	 * 根据状态id查找车辆
@@ -31,14 +31,14 @@ public interface CarsDao {
 	 * @param requestStateId
 	 * @return
 	 */
-	public List<Cars> findCarsByRSId(int requestStateId);
+	List<Cars> findCarsByRSId(int requestStateId);
 	
 	/**
 	 * 查询所有的车辆
 	 * 
 	 * @return
 	 */
-	public List<Cars> findCarsAll();
+	List<Cars> findCarsAll();
 	
 	/**
 	 * 更新车辆信息
@@ -46,7 +46,7 @@ public interface CarsDao {
 	 * @param mr
 	 * @return
 	 */
-	public int updateCars(Cars cars);
+	int updateCars(Cars cars);
 	
 	/**
 	 * 根据车辆id删除车辆
@@ -54,7 +54,7 @@ public interface CarsDao {
 	 * @param carId
 	 * @return
 	 */
-	public int deleteCarsById(int carId);
+	int deleteCarsById(int carId);
 	
 	/**
 	 * 添加一个车辆
@@ -62,9 +62,9 @@ public interface CarsDao {
 	 * @param mr
 	 * @return
 	 */
-	public int addCars(Cars cars);
+	int addCars(Cars cars);
 	/**
 	 * 批量删除
 	 */
-	public int deleteCarArray(int[] carIds);
+	int deleteCarArray(int[] carIds);
 }

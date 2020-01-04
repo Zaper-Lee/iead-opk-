@@ -15,12 +15,12 @@ public interface ApproveStateService {
 	 * @param approveStateId
 	 * @return
 	 */
-	public List<ApproveState> findASById(String approveStateId);
+	List<ApproveState> findASById(String approveStateId);
 	
 	/**
 	 * 查询所有审批状态
 	 * 
 	 * @return
 	 */
-	public List<ApproveState> findASAll();
+	List<ApproveState> findASAll();
 }

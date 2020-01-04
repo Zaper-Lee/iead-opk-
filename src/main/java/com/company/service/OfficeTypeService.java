@@ -16,12 +16,12 @@ public interface OfficeTypeService {
 	 * @param officetypeId
 	 * @return
 	 */
-	public OfficeType findOfficeTypeByOTId(String officeTypeId);
+	OfficeType findOfficeTypeByOTId(String officeTypeId);
 	
 	/**
 	 * 查找所有的办公用品
 	 * 
 	 * @return
 	 */
-	public List<OfficeType> findOfficeTypeAll();
+	List<OfficeType> findOfficeTypeAll();
 }

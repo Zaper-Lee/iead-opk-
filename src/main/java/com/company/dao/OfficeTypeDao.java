@@ -15,12 +15,12 @@ public interface OfficeTypeDao {
 	 * @param officetypeId
 	 * @return
 	 */
-	public OfficeType findOfficeTypeByOTId(int officeTypeId);
+	OfficeType findOfficeTypeByOTId(int officeTypeId);
 	
 	/**
 	 * 查找所有的办公用品
 	 * 
 	 * @return
 	 */
-	public List<OfficeType> findOfficeTypeAll();
+	List<OfficeType> findOfficeTypeAll();
 }
